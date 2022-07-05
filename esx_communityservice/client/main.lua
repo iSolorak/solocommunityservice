@@ -12,7 +12,7 @@ local Keys = {
 
 ESX = nil
 INPUT_CONTEXT = 51
-aaa
+
 local isSentenced = false
 local communityServiceFinished = false
 local actionsRemaining = 0
@@ -130,7 +130,7 @@ Citizen.CreateThread(function()
 	while true do
 		:: start_over ::
 		Citizen.Wait(1)
-
+		
 		if actionsRemaining > 0 and isSentenced then
 			draw2dText( _U('remaining_msg', ESX.Math.Round(actionsRemaining)), { 0.175, 0.955 } )
 			DrawAvailableActions()
